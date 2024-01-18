@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.app-container {
+  height: 700px;
+  width: 400px;
+  background: linear-gradient(135deg, #3498db, #8e44ad);
+  border-radius: 25px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.temperature-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.temperature-display {
+  display: flex;
+  border-radius: 50%;
+  color: #ffffff;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 4px #ffffff solid;
+  transition: background 0.5s, transform 0.3s;
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+}
+
+button {
+  border-radius: 100px;
+  height: 70px;
+  width: 70px;
+  font-size: 24px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  border: 2px #ffffff solid;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.neutral {
+  background: linear-gradient(45deg, #bdc3c7, #e0e0e0);
+}
+
+.cold {
+  background: linear-gradient(45deg, #3498db, #5dade2);
+}
+
+.hot {
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+}
